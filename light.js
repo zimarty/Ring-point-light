@@ -18,7 +18,7 @@
 					object.scale.x = object.scale.y = object.scale.z = 0.90;
 					scene.add( object );
 				};
-				loader.load( "obj/boox.js", callback );
+				loader.load( "obj/zicube.js", callback );
 				var sphere = new THREE.SphereGeometry( 0.5, 16, 8 );
 				light1 = new THREE.PointLight( 0xff0040, 2, 50 );
 				light1.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xff0040 } ) ) );
