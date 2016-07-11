@@ -12,6 +12,7 @@
 				var container = document.getElementById("page");
 				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 1000 );
 				camera.position.z = 100;
+				camera.position.y = 10;
 				scene = new THREE.Scene();
 				loader = new THREE.BinaryLoader();
 				var callback = function( geometry ) {

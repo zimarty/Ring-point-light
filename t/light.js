@@ -11,7 +11,7 @@
 
 				var container = document.getElementById("page");
 				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 1000 );
-				camera.position.z = 100;
+				camera.position.z = 20;
 				scene = new THREE.Scene();
 				loader = new THREE.BinaryLoader();
 				var callback = function( geometry ) {
@@ -44,9 +44,9 @@
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
 			function onWindowResize() {
-				camera.aspect = window.innerWidth / window.innerHeight/3;
+				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight/3 );
+				renderer.setSize( window.innerWidth, window.innerHeight);
 			}
 			//
 			function animate() {
